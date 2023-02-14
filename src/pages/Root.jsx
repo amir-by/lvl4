@@ -1,4 +1,4 @@
- import { Box, Typography } from '@mui/material';
+ import { Box, } from '@mui/material';
  import APPBAR from 'mui-components/APP_BAR';
 import DRAWER from 'mui-components/DRAWER';
 import { Outlet } from 'react-router-dom';
@@ -15,7 +15,7 @@ const Root = () => {
       
       <DRAWER drawerWidth={drawerWidth}/>
 
-      <Box   sx={{ ml: `${drawerWidth}px`, color:'red', border:'2px solid red',
+      <Box component={'main'}  sx={{ ml: `${drawerWidth}px`,
         display:"flex" ,justifyContent:"center"
     }} >
           <Outlet  />
